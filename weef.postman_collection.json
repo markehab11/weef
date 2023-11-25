@@ -1,0 +1,565 @@
+{
+	"info": {
+		"_postman_id": "1d7c1881-ef0e-4ed6-8876-eedb82dd5ac9",
+		"name": "weef",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30933056"
+	},
+	"item": [
+		{
+			"name": "sliders",
+			"item": [
+				{
+					"name": "get_all_sliders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/sliders",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"sliders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_one_slider",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/slider/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"slider",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_new_slider",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/sliders?name=test&image=test&title=test",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"sliders"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "test"
+								},
+								{
+									"key": "image",
+									"value": "test"
+								},
+								{
+									"key": "title",
+									"value": "test"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_slider",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/slider/20?name=update&image=update&title=update",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"slider",
+								"20"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "update"
+								},
+								{
+									"key": "image",
+									"value": "update"
+								},
+								{
+									"key": "title",
+									"value": "update"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_slider",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/sliders/20",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"sliders",
+								"20"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "get_all_category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/categories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_one_category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/category/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_new_category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/categories?name=test&name_ar=test&image=test&title=test",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "test"
+								},
+								{
+									"key": "name_ar",
+									"value": "test"
+								},
+								{
+									"key": "image",
+									"value": "test"
+								},
+								{
+									"key": "title",
+									"value": "test"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/category/1?name=update&name_ar=update&image=update&title=update",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"category",
+								"1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "update"
+								},
+								{
+									"key": "name_ar",
+									"value": "update"
+								},
+								{
+									"key": "image",
+									"value": "update"
+								},
+								{
+									"key": "title",
+									"value": "update"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/categories/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "get_all_products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/products",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_one_product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/product/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/products?name=test&image=test&pro_code=1teestfdgdf&categorie_id=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "test"
+								},
+								{
+									"key": "image",
+									"value": "test"
+								},
+								{
+									"key": "pro_code",
+									"value": "1teestfdgdf"
+								},
+								{
+									"key": "categorie_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/product/2?name=testasda&image=testdfsddasd&pro_code=1teestfdgdf&categorie_id=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"2"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "testasda"
+								},
+								{
+									"key": "image",
+									"value": "testdfsddasd"
+								},
+								{
+									"key": "pro_code",
+									"value": "1teestfdgdf"
+								},
+								{
+									"key": "categorie_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/products/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "blogs",
+			"item": [
+				{
+					"name": "get_all_blogs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/blogs",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"blogs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_one_blog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/blog/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"blog",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_blog",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/blogs?name=test&image=test&title=test&description=test",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"blogs"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "test"
+								},
+								{
+									"key": "image",
+									"value": "test"
+								},
+								{
+									"key": "title",
+									"value": "test"
+								},
+								{
+									"key": "description",
+									"value": "test"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updade_blog",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/blog/2?name=testrwe&image=testwe&title=testwer&description=dfas",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"blog",
+								"2"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "testrwe"
+								},
+								{
+									"key": "image",
+									"value": "testwe"
+								},
+								{
+									"key": "title",
+									"value": "testwer"
+								},
+								{
+									"key": "description",
+									"value": "dfas"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_blog",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/blogs/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"blogs",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		}
+	]
+}
